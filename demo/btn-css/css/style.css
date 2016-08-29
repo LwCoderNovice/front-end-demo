@@ -1,0 +1,118 @@
+/*style*/
+
+body{
+	font-size: 14px;
+	line-height: 1rem;
+	color:#868686;
+}
+
+ul li{
+	margin: .5rem;
+	list-style: none;
+}
+
+.btn{
+	padding: .3rem .5rem;
+	background: none;
+	border:1px solid;
+	transition: color 1s;
+}
+
+.btn-a{
+	color:#20C718;
+}
+.btn-a:hover{
+	animation: halftone 1s forwards;
+	background: radial-gradient(circle,#20c718 0.2em,rgba(0,0,0,0) 0.25em) 0 0/1.25em 1.25em,radial-gradient(circle,#20C718 .2em,rgba(0, 0, 0, 0) .25em) 6.25em 6.25em/1.25em 1.25em;
+	color:#fff;
+	border-color: #18890C;
+}
+@keyframes halftone{
+	100%{
+		background-size: 2.375em 2.375em,0.1em 0.1em;
+	}
+}
+@-webkit-keyframes halftone{
+	100%{
+		background-size: 2.375em 2.375em,0.1em 0.1em;
+	}
+}
+
+.btn-b{
+	color:#3B63F6;
+}
+.btn-b:hover{
+	animation:stripes-move .75s infinite linear;
+	background: repeating-linear-gradient(45deg,#3B63F6 0,#3B63F6 .25em,transparent .25em, transparent .5em);
+	background: -webkit-repeating-linear-gradient(45deg,#3B63F6 0,#3B63F6 .25em,transparent .25em, transparent .5em);
+	color:#06298D;
+}
+@keyframes stripes-move{
+	100%{
+		background-position: 5em 0;
+	}
+}
+.btn-c{
+	color:#FA7F7F;
+}
+.btn-c:hover{
+	animation:sawtooth .35s infinite linear;
+	background: linear-gradient(-45deg,#F6D9C2 .5em, transparent .5em) 0 0/1em 1em,
+		linear-gradient(-45deg,#F6D9C2 .5em,transparent .5em) 0 0/1em 1em;
+	color:#9D0DA2;
+}
+@keyframes sawtooth{
+	100%{
+		background-position: 1em 0;
+	}
+}
+.btn-d{
+	color:#81ECF9;
+}
+.btn-d:hover{
+	animation:zigzag 1s linear infinite;
+	background:linear-gradient(135deg,rgba(238, 161, 99, 0.25) 0.25em, transparent 0.25em) -.5em 0,
+	linear-gradient(225deg,rgba(238, 161, 99, 0.25) 0.25em, transparent 0.25em) -.5em 0,
+	linear-gradient(315deg,rgba(238, 161, 99, 0.25) 0.25em, transparent 0.25em) 0 0,
+	linear-gradient(45deg,rgba(238, 161, 99, 0.25) 0.25em, transparent 0.25em) 0 0;
+	background-size:.75em .75em;
+	color:#0CB03E;
+}
+@keyframes zigzag{
+	100%{
+		background-position: 1em 0,1em 0,-0.75em 0,-0.75em 0;
+	}
+}
+.btn-e{
+	color:#FDC792;
+}
+.btn-e:hover{
+	animation:blinds .75s linear forwards;
+	background:linear-gradient(0deg,#7cf07f 25%,transparent 25%) 0 0/.5em .5em,
+	linear-gradient(0deg,#88d6f3 50%,transparent 50%) 0 0/1em 1em;
+	color:#fff;
+}
+@keyframes blinds{
+	100%{
+		background-position: 0 0,0 -3em;
+		background-size: 0 0,1em 6em;
+	}
+}
+.btn-f{
+	color:#0E08F3;
+}
+.btn-f:hover{
+	animation:pulse 1s ease-in infinite;
+	background:radial-gradient(circle,rgba(249, 135, 155, 0.25) 43%,rgba(0, 0, 0, 0) 50%) 0 0/1em 1em,
+	radial-gradient(circle,rgba(249, 135, 155, 0.25) 43%,rgba(0, 0, 0, 0) 50%) .5em .5em/2em 2em;
+	color:#12098B;
+}
+@keyframes pulse{
+	50%{
+		background-position: .66em .66em,-.33em -.33em;
+	}
+	100%{
+		background-size:2em 2em ,1em 1em;
+		background-position: -1.5em -1.5em,-1em -1em;
+	}
+}
