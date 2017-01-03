@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>.load() method</title>
+		<link rel="stylesheet" href="style/style.css">
+	</head>
+	<body>
+		<section>
+			<div class="codeside">
+				<h4>.load() <small>loading all element of html</small></h4>
+				<button id="loadAllhtml">load to below</button>
+				
+				<h4>.load() <small>loading all element of html</small></h4>
+				<button id="loadElement">load Element</button>
+			</div>
+			<div class="resultside">
+				<div id="content">
+			
+				</div>
+			</div>
+		</section>
+	</body>
+	<script src="../../libs/jquery/jquery-2.2.4.min.js"></script>
+	<script>
+		$(function(){
+
+			$(document)
+			.on('click','#loadAllhtml',function(){
+				$("#content").load('test/dom.html');
+			})
+			.on('click',"#loadElement",function(){
+				$("#content").load("test/dom.html #container");
+			})
+		})
+	</script>
+</html>	

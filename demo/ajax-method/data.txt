@@ -1,0 +1,12 @@
+{
+	"people1": {
+		"name" : "Lion",
+		"age" :"16"
+	},
+
+	"people2": {
+		"name" : "Viper",
+		"age" : "20"
+	}
+
+}

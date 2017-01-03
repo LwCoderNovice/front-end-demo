@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>getScript</title>
+		<link rel="stylesheet" href="style/style.css">
+	</head>
+	<body>
+		<section>
+			<div class="codeside">
+				<button id="loadfile">load JS file</button>
+
+				<button id="loadend">Check btn</button>
+			</div>
+			<div class="resultside">
+				
+			</div>
+		</section>
+	</body>
+	<script src="../../libs/jquery/jquery-2.2.4.min.js"></script>
+	<script>
+		$(function(){
+			var	$text = $(".resultside");
+			$(document)
+			.on("click","#loadend",function(){
+				$text.append("<p>before load JS.</p>")
+			})
+			.on("click","#loadfile",function(){
+				$.getScript("test/getScriptData.js",function(){
+					console.log("end");
+					$(document).off("click","#loadend").on("click","#loadend",function(){
+
+						$text.append("<p>after load JS.</p>");
+
+					})
+				})
+			})
+		})
+	</script>
+</html>	
