@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>XMLHttpRequest</title>
+	</head>
+	<body>
+		<button class="btn">onload</button>
+		<div class="txt"></div>
+		<script>
+			window.onload = function() {
+				var btn = document.querySelector('.btn');
+				var req;
+				btn.onclick = function() {
+					req = null;
+					if (window.XMLHttpRequest) {
+						req = new XMLHttpRequest;
+					}
+					else if (window.ActiveXObject) {
+						//for below ie6
+						req = new ActiveXObject("Microsoft.XMLHTTP");
+					}
+					
+					if (req != null){
+						req.open(
+						'get',
+						'data.txt',
+						false
+						);
+						req.send(null);
+						console.log(req);
+						document.querySelector('.txt').innerHTML = req.responseText + ' end';
+					}
+					
+				}
+			}
+		</script>
+	</body>
+</html>	
