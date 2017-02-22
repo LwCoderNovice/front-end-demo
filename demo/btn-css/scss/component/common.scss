@@ -1,0 +1,25 @@
+body {
+	color:#868686;
+	font-size: 14px;
+	line-height: 1rem;
+}
+a {
+	color: #fff;
+}
+
+.row {
+	margin-bottom:10px;
+	text-align:center;
+	color: #fff;
+}
+
+.btn-list {
+	display: block;
+	margin-top: 20px;
+	color: #fff;
+
+	>ul> li {
+		margin: 1rem;
+		display: inline-block;
+	}
+}

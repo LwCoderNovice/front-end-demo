@@ -1,0 +1,50 @@
+/* FACEBOOK ================================================================= */
+/* from david walsh: http://davidwalsh.name/demo/css-flip.php */
+.flip-container {
+    -webkit-perspective: 1000;
+    -webkit-transform-style: preserve-3d;
+}
+.flip-container,
+.front,
+.back {
+    margin: 0 auto;
+    width: 225px;
+    height: 200px;
+}
+.flipper {
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    position: relative;
+}
+.front,
+.back {
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.front {
+    background: #35528f;
+    z-index: 2;
+    -webkit-transform: rotateY(0deg);
+
+    span {
+		font-size: 80px;
+		margin-top: 10px;	
+    }
+}
+.back {
+    background: #021f5c;
+    padding-top: 65px;
+    -webkit-transform: rotateY(-180deg);
+}
+.flip-container:hover .back {
+    -webkit-transform: rotateY(0deg);
+}
+.flip-container:hover .front {
+    -webkit-transform: rotateY(180deg);
+}
