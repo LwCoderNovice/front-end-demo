@@ -1,0 +1,57 @@
+.btnborder {
+	position: relative;
+	font-size: 14px;
+	width: 120px;
+	padding: 8px 10px;
+	text-align: center;
+	color: #333;
+	border: none;
+	background: none;
+	box-sizing: border-box;
+	box-shadow: inset 0 0 0 1px #333;
+}
+
+.btnborder::before, .btnborder::after {
+  box-sizing: border-box;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.draw {
+  -webkit-transition: color 0.25s;
+          transition: color 0.25s;
+}
+.draw::before, .draw::after {
+  border: 1px solid transparent;
+  width: 0;
+  height: 0;
+}
+.draw::before {
+  top: 0;
+  left: 0;
+}
+.draw::after {
+  bottom: 0;
+  right: 0;
+}
+.draw:hover {
+  color: #60daaa;
+}
+.draw:hover::before, .draw:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.draw:hover::before {
+  border-top-color: #60daaa;
+  border-right-color: #60daaa;
+  -webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+          transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+.draw:hover::after {
+  border-bottom-color: #60daaa;
+  border-left-color: #60daaa;
+  -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+          transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}
