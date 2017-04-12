@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>title</title>
+		<link href="http://cdn.bootcss.com/bootstrap/4.0.0-alpha.5/css/bootstrap.css" rel="stylesheet">
+	</head>
+	<style>
+		.form-check {
+
+		}
+	/*	input[class="form-radio"] {
+			position: absolute;
+			left: -9999px;
+		}*/
+		input[class="form-radio"] + label:before {
+			display: inline-block;
+			width: 18px;
+			height: 18px;
+			border-radius: 3px;
+			border: 1px solid #ededed;
+			content: "";
+		}
+
+		input[class="form-radio"]:checked + label:before {
+			background: red;
+			color:#fff;
+			border-color: red;
+		}
+		select {
+    width: 200px;
+    /*注意在下拉框中，width是包括border的宽度的*/
+     
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid goldenrod;
+    background-color: white;
+    background-repeat: no-repeat;
+    /*背景图像的尺寸：第一个值为宽度，第二值为高度*/
+     
+    background-size: 8px 8px, 8px 8px, 30px 30px, 1px 30px;
+    /*背景图片：多张图片用","分割*/
+    /*repeating-linear-gradient() 函数用于重复线性渐变：参数分别为角度，颜色1，颜色2,...*/
+     
+    background-image: repeating-linear-gradient(225deg, rgb(105, 123, 149) 0%, rgb(105, 123, 149) 50%, transparent 50%, transparent 100%),
+    /*组合成三角形图标*/
+     
+    repeating-linear-gradient(135deg, rgb(105, 123, 149) 0%, rgb(105, 123, 149) 50%, transparent 50%, transparent 100%),
+    /*组合成三角形图标*/
+     
+    linear-gradient(#FFFFFF 0%, #F8F9Fd, #EFFAFA 100%),
+    /*竖分割线右侧的背景色*/
+     
+    repeating-linear-gradient( rgb(191, 204, 220) 0%, rgb(191, 204, 220) 100%);
+    /*竖分割线*/
+    /*背景图片的位置：第一个参数为水平位置，第二参数为垂直位置*/
+     
+    background-position: 175px 10px, 183px 10px, right top, 167px top;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+	</style>
+	<body><span class="glyphicon glyphicon-ok"  aria-hidden="true"></span>
+	<div class="container">
+			<div class="row">
+		<div class="col-sm-6">
+			<input type="radio" id="checkbox1" class="form-radio" name="test">
+			<label for="checkbox1" class="form-check">Check here</label></div>
+		<div class="col-sm-6">
+		<input type="radio" id="checkbox" class="form-radio" name="test">
+		<label for="checkbox" class="form-check">Check here</label></div>
+		</div>
+		
+		<select name="" id="select">
+			<option value="1">option 1</option>
+			<option value="2">option 2</option>
+			<option value="3">option 3</option>
+		</select>
+
+	</div>
+	
+
+	</body>
+</html>	

@@ -1,0 +1,90 @@
+{
+  "_args": [
+    [
+      "jquery-colorbox",
+      "F:\\front-end-demo\\demo\\color-box"
+    ]
+  ],
+  "_cnpm_publish_time": 1462918959689,
+  "_from": "jquery-colorbox@latest",
+  "_id": "jquery-colorbox@1.6.4",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/jquery-colorbox",
+  "_nodeVersion": "4.3.1",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/jquery-colorbox-1.6.4.tgz_1462918956546_0.9030691448133439"
+  },
+  "_npmUser": {
+    "email": "hello@jacklmoore.com",
+    "name": "jacklmoore"
+  },
+  "_npmVersion": "3.7.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "jquery-colorbox",
+    "raw": "jquery-colorbox",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "http://r.cnpmjs.org/jquery-colorbox/download/jquery-colorbox-1.6.4.tgz",
+  "_shasum": "799452523a6c494839224ef702e807deb9c06cc5",
+  "_shrinkwrap": null,
+  "_spec": "jquery-colorbox",
+  "_where": "F:\\front-end-demo\\demo\\color-box",
+  "author": {
+    "email": "hello@jacklmoore.com",
+    "name": "Jack Moore",
+    "url": "http://www.jacklmoore.com"
+  },
+  "bugs": {
+    "url": "https://github.com/jackmoore/colorbox/issues"
+  },
+  "demo": "http://www.jacklmoore.com/colorbox",
+  "dependencies": {
+    "jquery": ">=1.3.2"
+  },
+  "description": "jQuery lightbox and modal window plugin.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "noattachment": false,
+    "shasum": "799452523a6c494839224ef702e807deb9c06cc5",
+    "size": 1011815,
+    "tarball": "http://r.cnpmjs.org/jquery-colorbox/download/jquery-colorbox-1.6.4.tgz"
+  },
+  "gitHead": "bac78120c6ca9e63370cc317ab6f400129cd6608",
+  "homepage": "http://www.jacklmoore.com/colorbox",
+  "keywords": [
+    "modal",
+    "lightbox",
+    "gallery",
+    "popup",
+    "ui",
+    "jquery-plugin"
+  ],
+  "license": "MIT",
+  "main": "jquery.colorbox.js",
+  "maintainers": [
+    {
+      "email": "hello@jacklmoore.com",
+      "name": "jacklmoore"
+    }
+  ],
+  "name": "jquery-colorbox",
+  "optionalDependencies": {},
+  "publish_time": 1462918959689,
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jackmoore/colorbox.git"
+  },
+  "scripts": {},
+  "version": "1.6.4"
+}

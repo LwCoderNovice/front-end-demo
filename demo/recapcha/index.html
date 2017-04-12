@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>title</title>
+	</head>
+	<body>
+		<div id="reCAPTCHA">
+			
+		</div>
+	</body>
+	<script src="../../libs/jquery/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript">
+		function verifyCallback(response) {
+		    $('#reCAPTCHA').addClass('has-success');
+		}
+
+		function recaptchaCallback() {
+			// TODO:sitekey get from local.properties 
+		    grecaptcha.render('reCAPTCHA', {
+		      'sitekey' : '6Ld40RsUAAAAALagxhAu-eKbRItc_1XC6uGfmg7K',
+		      'callback' : verifyCallback
+		    });
+		}
+	</script>
+	<script src="//www.google.com/recaptcha/api.js?onload=recaptchaCallback&render=explicit" async="" defer=""></script>
+</html>	
